@@ -199,7 +199,7 @@ my_ip_address_init (MyIPAddress *ipaddress)
     priv->address[i] = 0;
   
   fd = pango_font_description_from_string ("Monospace");
-  gtk_widget_modify_font (GTK_WIDGET (ipaddress), fd);
+  gtk_widget_override_font (GTK_WIDGET (ipaddress), fd);
   my_ip_address_render (ipaddress);
   pango_font_description_free (fd);
   
