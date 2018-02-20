@@ -1,9 +1,9 @@
 #include <gtk/gtk.h>
-#include <gdk/gdkkeysyms.h>
+#include "gdkkeysyms.h"
 #include <stdlib.h>
 #include <math.h>
 #include "myipaddress.h"
-#include "temp_include.h"
+//#include "temp_include.h"
 
 
 #define MY_IP_ADDRESS_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), MY_IP_ADDRESS_TYPE, MyIPAddressPrivate))
