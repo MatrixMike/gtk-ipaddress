@@ -201,8 +201,8 @@ my_ip_address_init (MyIPAddress *ipaddress)
     priv->address[i] = 0;
   
   fd = pango_font_description_from_string ("Monospace");
-  gtk_widget_override_font (GTK_WIDGET (ipaddress), fd);
-  my_ip_address_render (ipaddress);
+  gtk_widget_override_font (GTK_WIDGET (ipaddress), fd);  // temp removal
+// see https://gitlab.savoirfairelinux.com/ring/ring-client-gnome/commit/682938282792e670be7d09b53b89737e64732fdd  my_ip_address_render (ipaddress);
   pango_font_description_free (fd);
   
   /* The key-press-event signal will be used to filter out certain keys. We will
